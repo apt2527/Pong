@@ -1,6 +1,7 @@
 import turtle
 import time 
 import winsound
+import random
 
 wn = turtle.Screen()
 wn.title("Pong")
@@ -130,9 +131,11 @@ while True:
         ball.setx(340)
         ball.dx *= -1
         winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
+        ball.dy = random.choice([-4, -3, -2, 2, 3, 4])
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
         ball.setx(-340)
-        ball.dx *= -1   
+        ball.dx *= -1
+        ball.dy = random.choice([-4, -3, -2, 2, 3, 4])
         winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
 
 # AI Player
