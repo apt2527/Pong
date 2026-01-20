@@ -1,0 +1,8 @@
+Height  = 20 × stretch_wid
+Width   = 20 × stretch_len
+
+stretch_wid = 5
+stretch_len = 1
+
+Height = 20 × 5 = 100 px
+Width = 20 × 1 = 20 px
