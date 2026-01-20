@@ -136,7 +136,7 @@ while True:
         ball.setx(-340)
         ball.dx *= -1
         ball.dy = random.choice([-4, -3, -2, 2, 3, 4])
-        winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
+        # winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
 
 # AI Player
     # if paddle_b.ycor() < ball.ycor() and abs(paddle_b.ycor() - ball.ycor() > 10):
