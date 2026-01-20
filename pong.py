@@ -129,11 +129,11 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
         ball.setx(340)
         ball.dx *= -1
-        winsound.PlaySound("/ASSETS/HIT.wav", winsound.SND_ASYNC)
+        winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
         ball.setx(-340)
         ball.dx *= -1   
-        winsound.PlaySound("/ASSETS/HIT.wav", winsound.SND_ASYNC)
+        winsound.PlaySound("ASSETS/HIT.wav", winsound.SND_ASYNC)
 
 # AI Player
     # if paddle_b.ycor() < ball.ycor() and abs(paddle_b.ycor() - ball.ycor() > 10):
